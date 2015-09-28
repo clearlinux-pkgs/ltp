@@ -1,6 +1,6 @@
 Name     : ltp
 Version  : 20150420
-Release  : 7
+Release  : 8
 URL      : https://linux-test-project.github.io/
 Source0  : http://downloads.sourceforge.net/ltp/ltp-full-20150420.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
