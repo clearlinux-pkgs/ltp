@@ -1,8 +1,8 @@
 Name     : ltp
-Version  : 20150420
-Release  : 8
+Version  : 20160126
+Release  : 9
 URL      : https://linux-test-project.github.io/
-Source0  : http://downloads.sourceforge.net/ltp/ltp-full-20150420.tar.xz
+Source0  : https://github.com/linux-test-project/ltp/releases/download/20160126/ltp-full-20160126.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
 Group    : Development/Tools
 License  : GPL-2.0
@@ -24,7 +24,7 @@ Authors:
     Brent Yardley <yardleyb@us.ibm.com>
 
 %prep
-%setup -q -n ltp-full-20150420
+%setup -q -n ltp-full-20160126
 
 %build
 %configure --disable-static
