@@ -1,8 +1,8 @@
 Name     : ltp
-Version  : 20160126
+Version  : 20170929
 Release  : 13
 URL      : https://linux-test-project.github.io/
-Source0  : https://github.com/linux-test-project/ltp/releases/download/20160126/ltp-full-20160126.tar.xz
+Source0  : https://github.com/linux-test-project/ltp/releases/download/20170929/ltp-full-20170929.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
 Group    : Development/Tools
 License  : GPL-2.0
@@ -24,7 +24,7 @@ Authors:
     Brent Yardley <yardleyb@us.ibm.com>
 
 %prep
-%setup -q -n ltp-full-20160126
+%setup -q -n ltp-full-20170929
 
 %build
 %configure --disable-static
@@ -38,7 +38,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 /usr/IDcheck.sh
 /usr/Version
-/usr/bin/STPfailure_report.pl
 /usr/bin/create_dmesg_entries_for_each_test.awk
 /usr/bin/create_kernel_faults_in_loops_and_probability.awk
 /usr/bin/create_valgrind_check.awk
@@ -50,9 +49,7 @@ rm -rf %{buildroot}
 /usr/bin/ltp-bump
 /usr/bin/ltp-pan
 /usr/bin/make-file.sh
-/usr/bin/rand_lines
 /usr/bin/restore_kernel_faults_default.sh
-/usr/runalltests.sh
 /usr/runltp
 /usr/runltplite.sh
 /usr/runtest/*
@@ -62,23 +59,14 @@ rm -rf %{buildroot}
 /usr/share/man/man1/iogen.1
 /usr/share/man/man1/ltp-bump.1
 /usr/share/man/man1/ltp-pan.1
-/usr/share/man/man3/bytes_by_prefix.3
-/usr/share/man/man3/forker.3
-/usr/share/man/man3/get_attrib.3
-/usr/share/man/man3/parse_open_flags.3
 /usr/share/man/man3/parse_opts.3
 /usr/share/man/man3/parse_ranges.3
-/usr/share/man/man3/pattern.3
 /usr/share/man/man3/random_range.3
 /usr/share/man/man3/random_range_seed.3
-/usr/share/man/man3/rmobj.3
-/usr/share/man/man3/string_to_tokens.3
 /usr/share/man/man3/tst_res.3
-/usr/share/man/man3/tst_set_error.3
 /usr/share/man/man3/tst_sig.3
 /usr/share/man/man3/tst_tmpdir.3
 /usr/share/man/man3/usctest.3
-/usr/share/man/man3/write_log.3
 /usr/testcases/bin/*
 /usr/testcases/data/*
 /usr/testscripts/*

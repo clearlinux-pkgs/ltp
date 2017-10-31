@@ -1,3 +1,3 @@
 PKG_NAME := ltp
-URL := https://github.com/linux-test-project/ltp/releases/download/20160126/ltp-full-20160126.tar.xz
+URL := https://github.com/linux-test-project/ltp/releases/download/20170929/ltp-full-20170929.tar.xz
 include ../common/Makefile.common
