@@ -1,6 +1,6 @@
 Name     : ltp
 Version  : 20170929
-Release  : 13
+Release  : 14
 URL      : https://linux-test-project.github.io/
 Source0  : https://github.com/linux-test-project/ltp/releases/download/20170929/ltp-full-20170929.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
