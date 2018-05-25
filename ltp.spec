@@ -1,8 +1,8 @@
 Name     : ltp
-Version  : 20180118
-Release  : 19
+Version  : 20180515
+Release  : 20
 URL      : https://linux-test-project.github.io/
-Source0  : https://github.com/linux-test-project/ltp/releases/download/20180118/ltp-full-20180118.tar.xz
+Source0  : https://github.com/linux-test-project/ltp/releases/download/20180515/ltp-full-20180515.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
 Group    : Development/Tools
 License  : GPL-2.0
@@ -12,6 +12,7 @@ BuildRequires : bison
 BuildRequires : flex
 BuildRequires : libcap-dev
 BuildRequires : zip
+Patch1: 0001-Fix-build-for-cve-2015-3290.c.patch
 
 %define debug_package %{nil}
 
@@ -24,7 +25,8 @@ Authors:
     Brent Yardley <yardleyb@us.ibm.com>
 
 %prep
-%setup -q -n ltp-full-20180118
+%setup -q -n ltp-full-20180515
+%patch1 -p1
 
 %build
 %configure --disable-static
