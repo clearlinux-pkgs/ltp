@@ -1,6 +1,6 @@
 Name     : ltp
 Version  : 20180118
-Release  : 17
+Release  : 18
 URL      : https://linux-test-project.github.io/
 Source0  : https://github.com/linux-test-project/ltp/releases/download/20180118/ltp-full-20180118.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
@@ -33,6 +33,8 @@ make V=1 %{?_smp_mflags}
 %install
 rm -rf %{buildroot}
 %make_install
+chmod 0755 %{buildroot}/usr/bin/*
+
 
 %files
 %defattr(-,root,root,-)
