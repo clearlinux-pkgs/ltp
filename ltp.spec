@@ -1,6 +1,6 @@
 Name     : ltp
 Version  : 20180118
-Release  : 18
+Release  : 19
 URL      : https://linux-test-project.github.io/
 Source0  : https://github.com/linux-test-project/ltp/releases/download/20180118/ltp-full-20180118.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
