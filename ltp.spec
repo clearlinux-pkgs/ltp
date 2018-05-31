@@ -34,7 +34,7 @@ make V=1 %{?_smp_mflags}
 rm -rf %{buildroot}
 %make_install
 chmod 0755 %{buildroot}/usr/bin/*
-
+chmod 0755 %{buildroot}/usr/testcases/bin/*
 
 %files
 %defattr(-,root,root,-)
