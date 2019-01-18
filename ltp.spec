@@ -1,8 +1,8 @@
 Name     : ltp
-Version  : 20180926
-Release  : 22
+Version  : 20190115
+Release  : 23
 URL      : https://linux-test-project.github.io/
-Source0  : https://github.com/linux-test-project/ltp/releases/download/20180926/ltp-full-20180926.tar.xz
+Source0  : https://github.com/linux-test-project/ltp/releases/download/20190115/ltp-full-20190115.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
 Group    : Development/Tools
 License  : GPL-2.0
@@ -13,7 +13,6 @@ BuildRequires : flex
 BuildRequires : libcap-dev
 BuildRequires : zip
 Patch1: 0001-Fix-build-for-cve-2015-3290.c.patch
-Patch2: 0002-statx-fix-compile-errors.patch
 
 %define debug_package %{nil}
 
@@ -26,9 +25,8 @@ Authors:
     Brent Yardley <yardleyb@us.ibm.com>
 
 %prep
-%setup -q -n ltp-full-20180926
+%setup -q -n ltp-full-20190115
 %patch1 -p1
-%patch2 -p1
 
 %build
 %reconfigure --disable-static
@@ -57,7 +55,6 @@ chmod 0755 %{buildroot}/usr/testcases/bin/*
 /usr/bin/make-file.sh
 /usr/bin/restore_kernel_faults_default.sh
 /usr/runltp
-/usr/runltplite.sh
 /usr/runtest/*
 /usr/scenario_groups/default
 /usr/scenario_groups/network
