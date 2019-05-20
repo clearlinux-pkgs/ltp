@@ -1,8 +1,8 @@
 Name     : ltp
-Version  : 20190115
-Release  : 23
+Version  : 20190517
+Release  : 24
 URL      : https://linux-test-project.github.io/
-Source0  : https://github.com/linux-test-project/ltp/releases/download/20190115/ltp-full-20190115.tar.xz
+Source0  : https://github.com/linux-test-project/ltp/releases/download/20190517/ltp-full-20190517.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
 Group    : Development/Tools
 License  : GPL-2.0
@@ -25,10 +25,11 @@ Authors:
     Brent Yardley <yardleyb@us.ibm.com>
 
 %prep
-%setup -q -n ltp-full-20190115
+%setup -q -n ltp-full-20190517
 %patch1 -p1
 
 %build
+export CFLAGS="$CFLAGS -fno-lto"
 %reconfigure --disable-static
 make V=1 %{?_smp_mflags}
 
