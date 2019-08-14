@@ -1,6 +1,6 @@
 Name     : ltp
 Version  : 20190517
-Release  : 24
+Release  : 25
 URL      : https://linux-test-project.github.io/
 Source0  : https://github.com/linux-test-project/ltp/releases/download/20190517/ltp-full-20190517.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
@@ -13,6 +13,8 @@ BuildRequires : flex
 BuildRequires : libcap-dev
 BuildRequires : zip
 Patch1: 0001-Fix-build-for-cve-2015-3290.c.patch
+Patch2: 0002-remove-mc-gethost.patch
+Patch3: 0003-add-autotools-check-for-getdents-and-getdents64.patch
 
 %define debug_package %{nil}
 
@@ -27,6 +29,8 @@ Authors:
 %prep
 %setup -q -n ltp-full-20190517
 %patch1 -p1
+%patch2 -p1
+%patch3 -p1
 
 %build
 export CFLAGS="$CFLAGS -fno-lto"
