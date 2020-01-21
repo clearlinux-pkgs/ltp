@@ -1,8 +1,8 @@
 Name     : ltp
-Version  : 20190930
-Release  : 26
+Version  : 20200120
+Release  : 27
 URL      : https://linux-test-project.github.io/
-Source0  : https://github.com/linux-test-project/ltp/releases/download/20190930/ltp-full-20190930.tar.xz
+Source0  : https://github.com/linux-test-project/ltp/releases/download/20200120/ltp-full-20200120.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
 Group    : Development/Tools
 License  : GPL-2.0
@@ -25,7 +25,7 @@ Authors:
     Brent Yardley <yardleyb@us.ibm.com>
 
 %prep
-%setup -q -n ltp-full-20190930
+%setup -q -n ltp-full-20200120
 %patch1 -p1
 
 %build
@@ -47,7 +47,6 @@ chmod 0755 %{buildroot}/usr/testcases/bin/*
 /usr/bin/create_kernel_faults_in_loops_and_probability.awk
 /usr/bin/create_valgrind_check.awk
 /usr/bin/execltp
-/usr/bin/ffsb
 /usr/bin/genhtml.pl
 /usr/bin/html_report_header.txt
 /usr/bin/insert_kernel_faults.sh
