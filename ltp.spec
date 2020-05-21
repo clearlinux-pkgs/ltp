@@ -1,8 +1,8 @@
 Name     : ltp
-Version  : 20200120
-Release  : 27
+Version  : 20200515
+Release  : 28
 URL      : https://linux-test-project.github.io/
-Source0  : https://github.com/linux-test-project/ltp/releases/download/20200120/ltp-full-20200120.tar.xz
+Source0  : https://github.com/linux-test-project/ltp/releases/download/20200515/ltp-full-20200515.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
 Group    : Development/Tools
 License  : GPL-2.0
@@ -25,7 +25,7 @@ Authors:
     Brent Yardley <yardleyb@us.ibm.com>
 
 %prep
-%setup -q -n ltp-full-20200120
+%setup -q -n ltp-full-%{version}
 %patch1 -p1
 
 %build
