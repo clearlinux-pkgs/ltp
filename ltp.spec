@@ -1,8 +1,8 @@
 Name     : ltp
-Version  : 20210121
-Release  : 30
+Version  : 20210524
+Release  : 31
 URL      : https://linux-test-project.github.io/
-Source0  : https://github.com/linux-test-project/ltp/releases/download/20210121/ltp-full-20210121.tar.xz
+Source0  : https://github.com/linux-test-project/ltp/releases/download/20210524/ltp-full-20210524.tar.xz
 Summary  : Test tool for driving IO to block, raw, filesystem targets
 Group    : Development/Tools
 License  : GPL-2.0
@@ -12,7 +12,6 @@ BuildRequires : bison
 BuildRequires : flex
 BuildRequires : libcap-dev
 BuildRequires : zip
-Patch1: 0001-Fix-build-for-cve-2015-3290.c.patch
 
 %define debug_package %{nil}
 
@@ -26,9 +25,13 @@ Authors:
 
 %prep
 %setup -q -n ltp-full-%{version}
-%patch1 -p1
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
+export LANG=C.UTF-8
+export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto"
 %reconfigure --disable-static
 make V=1 %{?_smp_mflags}
