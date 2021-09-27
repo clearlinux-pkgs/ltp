@@ -1,0 +1,2 @@
+find %{buildroot}/usr/bin -type f -exec chmod 0755 {} +
+find %{buildroot}/usr/testcases/bin -type f -exec chmod 0755 {} +

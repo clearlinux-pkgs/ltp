@@ -1,0 +1,48 @@
+Configure miss: LIBMNL
+Configure miss: LIBTIRPC
+Configure miss: clnttcp_create
+Configure miss: clone3
+Configure miss: fsconfig
+Configure miss: fsmount
+Configure miss: fsopen
+Configure miss: fspick
+Configure miss: getdents
+Configure miss: io_pgetevents
+Configure miss: io_uring_enter
+Configure miss: io_uring_register
+Configure miss: io_uring_setup
+Configure miss: kcmp
+Configure miss: kernel-devel
+Configure miss: move_mount
+Configure miss: netinet/sctp.h
+Configure miss: numa.h
+Configure miss: numa.h presence
+Configure miss: numa.h usability
+Configure miss: numa_available in -lnuma
+Configure miss: numaif.h
+Configure miss: numaif.h presence
+Configure miss: numaif.h usability
+Configure miss: open_tree
+Configure miss: openat2
+Configure miss: perl module JSON
+Configure miss: perl module LWP::Simple
+Configure miss: pidfd_open
+Configure miss: pidfd_send_signal
+Configure miss: selinux/selinux.h
+Configure miss: selinux/selinux.h presence
+Configure miss: selinux/selinux.h usability
+Configure miss: stime
+Configure miss: struct fanotify_event_info_fid.fsid.__val
+Configure miss: struct fs_quota_statv
+Configure miss: struct ipc64_perm
+Configure miss: struct modify_ldt_ldt_s
+Configure miss: struct msqid64_ds
+Configure miss: struct ptrace_peeksiginfo_args
+Configure miss: struct semid64_ds
+Configure miss: struct shmid64_ds
+Configure miss: struct user_regs_struct
+Configure miss: sys/ustat.h
+Configure miss: ustat
+Configure miss: whether to define _FORTIFY_SOURCE=2
+Configure miss: xdr_char
+Configure miss: xfs/xqm.h
