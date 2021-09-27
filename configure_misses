@@ -2,6 +2,7 @@ Configure miss: LIBMNL
 Configure miss: LIBTIRPC
 Configure miss: clnttcp_create
 Configure miss: clone3
+Configure miss: epoll_pwait2
 Configure miss: fsconfig
 Configure miss: fsmount
 Configure miss: fsopen
@@ -15,13 +16,6 @@ Configure miss: kcmp
 Configure miss: kernel-devel
 Configure miss: move_mount
 Configure miss: netinet/sctp.h
-Configure miss: numa.h
-Configure miss: numa.h presence
-Configure miss: numa.h usability
-Configure miss: numa_available in -lnuma
-Configure miss: numaif.h
-Configure miss: numaif.h presence
-Configure miss: numaif.h usability
 Configure miss: open_tree
 Configure miss: openat2
 Configure miss: perl module JSON
