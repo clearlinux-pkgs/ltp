@@ -4,7 +4,7 @@
 #
 Name     : ltp
 Version  : 20220527
-Release  : 35
+Release  : 36
 URL      : https://github.com/linux-test-project/ltp/releases/download/20220527/ltp-full-20220527.tar.xz
 Source0  : https://github.com/linux-test-project/ltp/releases/download/20220527/ltp-full-20220527.tar.xz
 Summary  : Linux Test Project
