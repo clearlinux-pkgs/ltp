@@ -2,10 +2,6 @@ Configure miss: LIBMNL
 Configure miss: LIBTIRPC
 Configure miss: clnttcp_create
 Configure miss: clone3
-Configure miss: fsconfig
-Configure miss: fsmount
-Configure miss: fsopen
-Configure miss: fspick
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: getdents
 Configure miss: io_pgetevents
@@ -14,15 +10,10 @@ Configure miss: io_uring_register
 Configure miss: io_uring_setup
 Configure miss: kcmp
 Configure miss: kernel-devel
-Configure miss: move_mount
 Configure miss: netinet/sctp.h
-Configure miss: open_tree
 Configure miss: openat2
 Configure miss: perl module JSON
 Configure miss: perl module LWP::Simple
-Configure miss: pidfd_getfd
-Configure miss: pidfd_open
-Configure miss: pidfd_send_signal
 Configure miss: quotactl_fd
 Configure miss: selinux/selinux.h
 Configure miss: stime
@@ -31,10 +22,8 @@ Configure miss: struct __kernel_old_itimerspec
 Configure miss: struct __kernel_old_timespec
 Configure miss: struct __kernel_old_timeval
 Configure miss: struct __kernel_timespec
-Configure miss: struct fanotify_event_info_error
 Configure miss: struct fanotify_event_info_fid.fsid.__val
 Configure miss: struct fs_quota_statv
-Configure miss: struct futex_waitv
 Configure miss: struct ipc64_perm
 Configure miss: struct modify_ldt_ldt_s
 Configure miss: struct msqid64_ds
