@@ -1,38 +1,76 @@
-Configure miss: LIBMNL
-Configure miss: LIBTIRPC
+Configure miss: clnttcp_create
 Configure miss: clnttcp_create
 Configure miss: clone3
+Configure miss: clone3
+Configure miss: faccessat2
+Configure miss: faccessat2
+Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: gcc options needed to detect all undeclared functions
 Configure miss: getdents
+Configure miss: getdents
+Configure miss: io_pgetevents
 Configure miss: io_pgetevents
 Configure miss: io_uring_enter
+Configure miss: io_uring_enter
+Configure miss: io_uring_register
 Configure miss: io_uring_register
 Configure miss: io_uring_setup
+Configure miss: io_uring_setup
+Configure miss: kcmp
 Configure miss: kcmp
 Configure miss: kernel-devel
+Configure miss: kernel-devel
+Configure miss: libmnl
+Configure miss: libmnl
+Configure miss: libtirpc >= 0.2.4
+Configure miss: libtirpc >= 0.2.4
+Configure miss: netinet/sctp.h
 Configure miss: netinet/sctp.h
 Configure miss: openat2
+Configure miss: openat2
+Configure miss: perl module JSON
 Configure miss: perl module JSON
 Configure miss: perl module LWP::Simple
+Configure miss: perl module LWP::Simple
+Configure miss: quotactl_fd
 Configure miss: quotactl_fd
 Configure miss: selinux/selinux.h
+Configure miss: selinux/selinux.h
+Configure miss: stime
 Configure miss: stime
 Configure miss: struct __kernel_itimerspec
+Configure miss: struct __kernel_itimerspec
 Configure miss: struct __kernel_old_itimerspec
+Configure miss: struct __kernel_old_itimerspec
+Configure miss: struct __kernel_old_itimerval
+Configure miss: struct __kernel_old_itimerval
+Configure miss: struct __kernel_old_timespec
 Configure miss: struct __kernel_old_timespec
 Configure miss: struct __kernel_old_timeval
+Configure miss: struct __kernel_old_timeval
+Configure miss: struct __kernel_timespec
 Configure miss: struct __kernel_timespec
 Configure miss: struct fanotify_event_info_fid.fsid.__val
+Configure miss: struct fanotify_event_info_fid.fsid.__val
+Configure miss: struct fs_quota_statv
 Configure miss: struct fs_quota_statv
 Configure miss: struct ipc64_perm
+Configure miss: struct ipc64_perm
+Configure miss: struct modify_ldt_ldt_s
 Configure miss: struct modify_ldt_ldt_s
 Configure miss: struct msqid64_ds
-Configure miss: struct ptrace_peeksiginfo_args
+Configure miss: struct msqid64_ds
+Configure miss: struct semid64_ds
 Configure miss: struct semid64_ds
 Configure miss: struct shmid64_ds
-Configure miss: struct user_regs_struct
+Configure miss: struct shmid64_ds
+Configure miss: sys/ustat.h
 Configure miss: sys/ustat.h
 Configure miss: ustat
+Configure miss: ustat
+Configure miss: whether to define _FORTIFY_SOURCE=2
 Configure miss: whether to define _FORTIFY_SOURCE=2
 Configure miss: xdr_char
+Configure miss: xdr_char
+Configure miss: xfs/xqm.h
 Configure miss: xfs/xqm.h
